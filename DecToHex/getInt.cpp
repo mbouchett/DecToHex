@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   getInt.cpp
  * Author: mark
@@ -12,16 +6,21 @@
  */
 
 #include <c++/6/iostream>
-
 #include "getInt.h"
 
 getInt::getInt() {
-    x = 0;
-    s = "";
+    x = 0;      // integer to return
+    s = "";     // container for string input
 }
 
+/**
+ * gets input from the console
+ * converts it to integer or zero if non-integer input
+ */
 void getInt::fetchInt(){
-    std::cin >> s;
+    std::cin >> s;  //get user input
+    
+    // attempt conversion or save zero if conversion fails
     try{
         x = stoi(s, nullptr, 10);    //convert it to an int
     }
@@ -30,6 +29,10 @@ void getInt::fetchInt(){
     }
 }
 
+/**
+ * return the integer value of the object
+ * @return 
+ */
 int getInt::returnInt(){
     return x;
 }

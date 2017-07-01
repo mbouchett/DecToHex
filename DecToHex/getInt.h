@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   getInt.h
  * Author: mark
  *
  * Created on June 30, 2017, 9:54 PM
+ * gets user input and returns integer or 0 for non-int input
  */
 
 #ifndef GETINT_H
